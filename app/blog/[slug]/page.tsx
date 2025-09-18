@@ -56,7 +56,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
 
       <div className="container mx-auto px-4 py-8">
         <img
-          src={post.image}
+        src={post.image || "business-meeting-office.png"} //"/hero.jpg" 
           alt={post.title}
           className="w-full max-w-4xl mx-auto h-96 object-cover rounded-lg shadow-lg"
         />

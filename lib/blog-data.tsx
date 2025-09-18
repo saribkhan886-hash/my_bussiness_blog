@@ -131,7 +131,7 @@ export const blogPosts: BlogPost[] = [
     author: "Emma Rodriguez",
     publishedAt: "2024-01-16",
     readTime: "8 min read",
-    image: "/business-trends-meeting.jpg",
+    image: "/business-meeting-office.png",
   },
 ]
 
