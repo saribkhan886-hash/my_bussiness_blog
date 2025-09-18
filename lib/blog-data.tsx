@@ -44,7 +44,8 @@ export const blogPosts: BlogPost[] = [
     author: "Sarah Johnson",
     publishedAt: "2024-01-15",
     readTime: "5 min read",
-    image: "/business-meeting-handshake-professional.jpg",
+    image: "/business-handshake-meeting-professional.jpg"
+
   },
   {
     id: "2",

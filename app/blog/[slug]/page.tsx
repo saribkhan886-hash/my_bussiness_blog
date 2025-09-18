@@ -54,13 +54,13 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
         </div>
       </header>
 
-      {/* ✅ Hero Image from /public folder */}
       <div className="container mx-auto px-4 py-8">
         <img
-          src="/hero.jpg"           
+          src={post.image}
           alt={post.title}
           className="w-full max-w-4xl mx-auto h-96 object-cover rounded-lg shadow-lg"
         />
+
       </div>
 
       {/* Article Content */}
