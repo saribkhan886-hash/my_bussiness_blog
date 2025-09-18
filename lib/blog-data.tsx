@@ -51,7 +51,7 @@ export const blogPosts: BlogPost[] = [
     id: "2",
     slug: "how-i-learned-to-stop-worrying-and-love-stock-market",
     title: "How I Learned to Stop Worrying and Love Stock Market",
-    excerpt: "A personal journey from market anxiety to confident investing strategies.",
+    excerpt: "A personal journey from market anxiety to confident investing Strategies.",
     content: `
       <h2>My Journey from Fear to Confidence</h2>
       <p>Five years ago, the mere mention of the stock market would send my anxiety levels through the roof. The thought of potentially losing my hard-earned money kept me awake at night. Today, I'm writing this article as someone who has not only overcome that fear but has learned to embrace the opportunities the market provides.</p>
