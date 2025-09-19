@@ -94,9 +94,21 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-sm text-muted-foreground">© 2024 Businessly. All rights reserved. | Powered by Next.js</p>
-        </div>
+        <div className="border-t border-border mt-8 pt-6">
+  <div className="flex justify-between items-center text-sm text-gray-500">
+    {/* Left side */}
+    <span>© 2025 Business Blog.</span>
+
+    {/* Right side */}
+    <span className="text-gray-500">
+      All rights reserved. |{" "}
+      <span className="text-blue-600 font-medium hover:underline cursor-pointer">
+        Powered by Bussines Blog.
+      </span>
+    </span>
+  </div>
+</div>
+
       </div>
     </footer>
   )

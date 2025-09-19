@@ -41,23 +41,33 @@ export function TrendingArticles() {
   ]
 
   return (
-    <section className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <section className="container mx-auto px-4 py-12">
+      <h2 className="text-2xl font-bold mb-8 text-center">🔥 Trending Articles</h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {articles.map((article, index) => (
-          <Card key={index} className="p-4 hover:shadow-md transition-shadow cursor-pointer">
-            <div className="flex gap-3">
+          <Card
+            key={index}
+            className="overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 rounded-xl bg-white dark:bg-neutral-900"
+          >
+            <div className="relative w-full h-40">
               <img
                 src={article.image || "/placeholder.svg"}
                 alt={article.title}
-                className="w-16 h-16 object-cover rounded"
+                className="w-full h-full object-cover"
               />
-              <div className="flex-1">
-                <h3 className="font-semibold text-sm mb-2 text-balance leading-tight">{article.title}</h3>
-                <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                  <span>{article.category}</span>
-                  <span>•</span>
-                  <span>{article.time}</span>
-                </div>
+              <span className="absolute top-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                {article.category}
+              </span>
+            </div>
+
+            <div className="p-4 flex flex-col gap-3">
+              <h3 className="font-semibold text-lg leading-snug hover:text-blue-600 transition-colors cursor-pointer">
+                {article.title}
+              </h3>
+
+              <div className="flex items-center text-xs text-muted-foreground">
+                <span>{article.time}</span>
               </div>
             </div>
           </Card>
